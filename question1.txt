@@ -1,0 +1,23 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+       HTTP1.1                                                   HTTP2               
+
+Response codes are added                                 support of parallel resquest by stream
+
+syntax and semantics are separated                       send related file without a resquest
+
+the Response there is tcb connection                     HTTP/2 works on the binary framing layer
+established between client & server
+
+HTTP/1.1 transfer all the requests &                     HTTP/2 works on the binary framing layer instead of textual that converts
+responses in the plain text message form.                all the messages in binary format
+
+includes the required source within the                  compress HTTP headers
+HTML page in response to the initial GET request.
+
+It is an Domain sharding and Image sprites               allows server push
+
+It will an concatenation also                            enables multiplexing
+
+                         

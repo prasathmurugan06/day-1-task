@@ -1,0 +1,46 @@
+Objects and properties
+
+The properties of an object define the characteristics of the object
+objectName.propertyName
+
+Like all JavaScript variables, both the object name (which could be a normal variable) and property name are case sensitive.
+
+var myCar = new Object();
+myCar.make = 'Swift';
+myCar.model = 'Mustang';
+myCar.year = 2000;
+
+You can also access properties by using a string value that is stored in a variable:
+var propertyName = 'make';
+myCar[propertyName] = 'Ford';propertyName = 'model';myCar[propertyName] = 'Mustang';
+
+Creating Objects In JavaScript :
+Create JavaScript Object with Object Literal
+One of easiest way to create a javascript object is object literal, simply define the property and values inside curly braces as shown below
+let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+Create JavaScript Object with Constructor
+Constructor is nothing but a function and with help of new keyword, constructor function allows to create multiple objects of same flavor as shown below
+function Vehicle(name, maker) {
+  this.name = name;
+  this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name);    //Output: Fiesta
+console.log(car2.name);    //Output: Santa Fe
+
+
+Using the JavaScript Keyword new
+The following example also creates a new JavaScript object with four properties:
+Example
+var person = new Object();
+person.firstName = “Prasath”;
+person.lastName = “Murugan”;
+person.age = 24;
+person.eyeColor = “black”;
+
+
+Using the Object.create method
+Objects can also be created using the Object.create() method. This method can be very useful
+
